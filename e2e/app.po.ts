@@ -18,7 +18,7 @@
 
 import { browser, by, element } from 'protractor';
 
-export class SpringPetclinicAngularPage {
+export class SpringCaseserviceAngularPage {
   navigateTo() {
     return browser.get('/');
   }

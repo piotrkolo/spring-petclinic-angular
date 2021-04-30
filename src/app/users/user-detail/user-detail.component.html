@@ -1,0 +1,59 @@
+<!--
+  ~ /*
+  ~  * Copyright 2016-2017 the original author or authors.
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  *      http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
+<div class="container-fluid">
+  <div class="container xd-container">
+
+    <h2>User Information</h2>
+
+
+    <table class="table table-striped">
+      <tr>
+        <th>Name</th>
+        <td><b>{{ user.firstName }} {{ user.lastName }}</b></td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>{{ user.address }}</td>
+      </tr>
+      <tr>
+        <th>City</th>
+        <td>{{ user.city }}</td>
+      </tr>
+      <tr>
+        <th>Telephone</th>
+        <td>{{ user.telephone }}</td>
+      </tr>
+    </table>
+
+    <button class="btn btn-default" (click)="gotoUsersList()">< Back</button>
+    <button class="btn btn-default" (click)="editUser()">Edit User</button>
+    <button class="btn btn-default" (click)="addCase(user)">Add New Case</button>
+
+    <br/>
+    <br/>
+    <br/>
+    <h2>Cases and Notes</h2>
+
+    <table class="table table-striped">
+      <tr>
+        <app-case-list *ngFor="let case of user.cases" [case]="case"></app-case-list>
+      </tr>
+    </table>
+  </div>
+</div>

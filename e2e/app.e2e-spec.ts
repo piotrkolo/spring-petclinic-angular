@@ -17,13 +17,13 @@
  */
 
 
-import { SpringPetclinicAngularPage } from './app.po';
+import { SpringCaseserviceAngularPage } from './app.po';
 
-describe('spring-petclinic-angular App', () => {
-  let page: SpringPetclinicAngularPage;
+describe('spring-caseservice-angular App', () => {
+  let page: SpringCaseserviceAngularPage;
 
   beforeEach(() => {
-    page = new SpringPetclinicAngularPage();
+    page = new SpringCaseserviceAngularPage();
   });
 
   it('should display app works message', done => {

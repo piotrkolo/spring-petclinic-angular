@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>spring-petclinic-angular documentation</title>
+        <title>spring-caseservice-angular documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">spring-petclinic-angular documentation</a>
+            <a href="../" class="navbar-brand">spring-caseservice-angular documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -173,12 +173,12 @@ export class AppComponent {
 
       &lt;li class&#x3D;&quot;dropdown&quot;&gt;
         &lt;a class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; role&#x3D;&quot;button&quot;
-           aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;Owners&lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
+           aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;Users&lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
         &lt;/a&gt;
         &lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
-          &lt;li&gt;&lt;a routerLink&#x3D;&quot;/owners&quot;&gt;&lt;span class&#x3D;&quot;glyphicon glyphicon-search&quot;
+          &lt;li&gt;&lt;a routerLink&#x3D;&quot;/users&quot;&gt;&lt;span class&#x3D;&quot;glyphicon glyphicon-search&quot;
                                             aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt; All&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a routerLink&#x3D;&quot;/owners/add&quot;&gt;&lt;span class&#x3D;&quot;glyphicon glyphicon-plus&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt; Add New&lt;/span&gt;&lt;/a&gt;
+          &lt;li&gt;&lt;a routerLink&#x3D;&quot;/users/add&quot;&gt;&lt;span class&#x3D;&quot;glyphicon glyphicon-plus&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt; Add New&lt;/span&gt;&lt;/a&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
@@ -194,9 +194,9 @@ export class AppComponent {
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;a routerLink&#x3D;&quot;/pettypes&quot; routerLinkActive&#x3D;&quot;active&quot; title&#x3D;&quot;pettypes&quot;&gt;
+        &lt;a routerLink&#x3D;&quot;/statuses&quot; routerLinkActive&#x3D;&quot;active&quot; title&#x3D;&quot;statuses&quot;&gt;
           &lt;span class&#x3D;&quot;glyphicon glyphicon-th-list&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
-          &lt;span&gt;Pet Types&lt;/span&gt;
+          &lt;span&gt;Case Types&lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -272,15 +272,15 @@ export class AppComponent {
         </div>
     </div>
 
-    
+
 </div>
 
 <script src="../js/libs/vis.min.js"></script>
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--  ~ /*  ~  * Copyright 2016-2017 the original author or authors.  ~  *  ~  * Licensed under the Apache License, Version 2.0 (the "License");  ~  * you may not use this file except in compliance with the License.  ~  * You may obtain a copy of the License at  ~  *  ~  *      http://www.apache.org/licenses/LICENSE-2.0  ~  *  ~  * Unless required by applicable law or agreed to in writing, software  ~  * distributed under the License is distributed on an "AS IS" BASIS,  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  ~  * See the License for the specific language governing permissions and  ~  * limitations under the License.  ~  */  --><div class="container-fluid"><nav class="navbar navbar-default " role="navigation">  <div class="container-fluid">  <div class="navbar-header">    <a class="navbar-brand" href="#"><span></span></a>  </div>    <ul class="nav navbar-nav">      <li>        <a routerLink="welcome" title="home page">          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>          <span>Home</span>        </a>      </li>      <li class="dropdown">        <a class="dropdown-toggle" data-toggle="dropdown" role="button"           aria-haspopup="true" aria-expanded="false">Owners<span class="caret"></span>        </a>        <ul class="dropdown-menu">          <li><a routerLink="/owners"><span class="glyphicon glyphicon-search"                                            aria-hidden="true"></span><span> All</span></a></li>          <li><a routerLink="/owners/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span> Add New</span></a>          </li>        </ul>      </li>      <li class="dropdown">        <a class="dropdown-toggle" data-toggle="dropdown" role="button"           aria-haspopup="true" aria-expanded="false">Veterinarians<span class="caret"></span>        </a>        <ul class="dropdown-menu">          <li><a routerLink="/vets"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span> All</span></a>          </li>          <li><a routerLink="/vets/add"><span class="glyphicon glyphicon-plus"                                              aria-hidden="true"></span><span> Add New</span></a></li>        </ul>      </li>      <li>        <a routerLink="/pettypes" routerLinkActive="active" title="pettypes">          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>          <span>Pet Types</span>        </a>      </li>      <li>        <a routerLink="/specialties" routerLinkActive="active" title="specialties">          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>          <span>Specialties</span>        </a>      </li>    </ul>  </div></nav></div><router-outlet></router-outlet><br/><br/><div class="container">  <div class="row">    <div class="col-12 text-center"><img src="./assets/images/angular.png"                                         alt="Angular" height="80" width="80"/>      <img src="./assets/images/spring-pivotal-logo.png"           alt="Sponsored by Pivotal"/></div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DummyComponent', 'selector': ''},{'name': 'OwnerAddComponent', 'selector': 'app-owner-add'},{'name': 'OwnerDetailComponent', 'selector': 'app-owner-detail'},{'name': 'OwnerEditComponent', 'selector': 'app-owner-edit'},{'name': 'OwnerListComponent', 'selector': 'app-owner-list'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PetAddComponent', 'selector': 'app-pet-add'},{'name': 'PetEditComponent', 'selector': 'app-pet-edit'},{'name': 'PetListComponent', 'selector': 'app-pet-list'},{'name': 'PettypeAddComponent', 'selector': 'app-pettype-add'},{'name': 'PettypeEditComponent', 'selector': 'app-pettype-edit'},{'name': 'PettypeListComponent', 'selector': 'app-pettype-list'},{'name': 'RouterOutletStubComponent', 'selector': 'app-router-outlet'},{'name': 'SpecialtyAddComponent', 'selector': 'app-specialty-add'},{'name': 'SpecialtyEditComponent', 'selector': 'app-specialty-edit'},{'name': 'SpecialtyListComponent', 'selector': 'app-specialty-list'},{'name': 'VetAddComponent', 'selector': 'app-vet-add'},{'name': 'VetEditComponent', 'selector': 'app-vet-edit'},{'name': 'VetListComponent', 'selector': 'app-vet-list'},{'name': 'VisitAddComponent', 'selector': 'app-visit-add'},{'name': 'VisitEditComponent', 'selector': 'app-visit-edit'},{'name': 'VisitListComponent', 'selector': 'app-visit-list'},{'name': 'WelcomeComponent', 'selector': 'app-welcome'}];
+        var COMPONENT_TEMPLATE = '<div><!--  ~ /*  ~  * Copyright 2016-2017 the original author or authors.  ~  *  ~  * Licensed under the Apache License, Version 2.0 (the "License");  ~  * you may not use this file except in compliance with the License.  ~  * You may obtain a copy of the License at  ~  *  ~  *      http://www.apache.org/licenses/LICENSE-2.0  ~  *  ~  * Unless required by applicable law or agreed to in writing, software  ~  * distributed under the License is distributed on an "AS IS" BASIS,  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  ~  * See the License for the specific language governing permissions and  ~  * limitations under the License.  ~  */  --><div class="container-fluid"><nav class="navbar navbar-default " role="navigation">  <div class="container-fluid">  <div class="navbar-header">    <a class="navbar-brand" href="#"><span></span></a>  </div>    <ul class="nav navbar-nav">      <li>        <a routerLink="welcome" title="home page">          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>          <span>Home</span>        </a>      </li>      <li class="dropdown">        <a class="dropdown-toggle" data-toggle="dropdown" role="button"           aria-haspopup="true" aria-expanded="false">Users<span class="caret"></span>        </a>        <ul class="dropdown-menu">          <li><a routerLink="/users"><span class="glyphicon glyphicon-search"                                            aria-hidden="true"></span><span> All</span></a></li>          <li><a routerLink="/users/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span> Add New</span></a>          </li>        </ul>      </li>      <li class="dropdown">        <a class="dropdown-toggle" data-toggle="dropdown" role="button"           aria-haspopup="true" aria-expanded="false">Veterinarians<span class="caret"></span>        </a>        <ul class="dropdown-menu">          <li><a routerLink="/vets"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span> All</span></a>          </li>          <li><a routerLink="/vets/add"><span class="glyphicon glyphicon-plus"                                              aria-hidden="true"></span><span> Add New</span></a></li>        </ul>      </li>      <li>        <a routerLink="/statuses" routerLinkActive="active" title="statuses">          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>          <span>Case Types</span>        </a>      </li>      <li>        <a routerLink="/specialties" routerLinkActive="active" title="specialties">          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>          <span>Specialties</span>        </a>      </li>    </ul>  </div></nav></div><router-outlet></router-outlet><br/><br/><div class="container">  <div class="row">    <div class="col-12 text-center"><img src="./assets/images/angular.png"                                         alt="Angular" height="80" width="80"/>      <img src="./assets/images/spring-pivotal-logo.png"           alt="Sponsored by Pivotal"/></div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DummyComponent', 'selector': ''},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDetailComponent', 'selector': 'app-user-detail'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserListComponent', 'selector': 'app-user-list'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'CaseAddComponent', 'selector': 'app-case-add'},{'name': 'CaseEditComponent', 'selector': 'app-case-edit'},{'name': 'CaseListComponent', 'selector': 'app-case-list'},{'name': 'StatusAddComponent', 'selector': 'app-status-add'},{'name': 'StatusEditComponent', 'selector': 'app-status-edit'},{'name': 'StatusListComponent', 'selector': 'app-status-list'},{'name': 'RouterOutletStubComponent', 'selector': 'app-router-outlet'},{'name': 'SpecialtyAddComponent', 'selector': 'app-specialty-add'},{'name': 'SpecialtyEditComponent', 'selector': 'app-specialty-edit'},{'name': 'SpecialtyListComponent', 'selector': 'app-specialty-list'},{'name': 'VetAddComponent', 'selector': 'app-vet-add'},{'name': 'VetEditComponent', 'selector': 'app-vet-edit'},{'name': 'VetListComponent', 'selector': 'app-vet-list'},{'name': 'VisitAddComponent', 'selector': 'app-note-add'},{'name': 'VisitEditComponent', 'selector': 'app-note-edit'},{'name': 'VisitListComponent', 'selector': 'app-note-list'},{'name': 'WelcomeComponent', 'selector': 'app-welcome'}];
     var DIRECTIVES = [{'name': 'RouterLinkStubDirective', 'selector': '[appRouterLink]'}];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>
@@ -295,7 +295,7 @@ export class AppComponent {
 
 
 
-                   
+
 
 
 
