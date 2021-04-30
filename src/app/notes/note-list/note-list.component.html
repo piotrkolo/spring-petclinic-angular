@@ -25,8 +25,7 @@
   </tr>
   </thead>
   <tr *ngFor="let note of notes">
-    <td>{{ note.date }}</td>
-    <td>{{ note.description }}</td>
+    <td>{{ note.details}}</td>
     <td>
       <button class="btn btn-default" (click)="editNote(note)">Edit Note</button>
       <button class="btn btn-default" (click)="deleteNote(note)">Delete Note</button>

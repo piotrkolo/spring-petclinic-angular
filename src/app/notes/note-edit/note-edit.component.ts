@@ -56,7 +56,7 @@ export class NoteEditComponent implements OnInit {
       response => {
         this.note = response;
 
-        this.currentCase = this.note.case;
+        this.currentCase = this.note.aCase;
         this.currentStatus = this.currentCase.status;
         this.currentUser = this.currentCase.user;
       },
@@ -64,7 +64,7 @@ export class NoteEditComponent implements OnInit {
   }
 
   onSubmit(note: Note) {
-    note.case = this.currentCase;
+    note.aCase = this.currentCase;
 
     // format output from datepicker to short string yyyy/mm/dd format
     note.date = moment(note.date).format('YYYY/MM/DD');

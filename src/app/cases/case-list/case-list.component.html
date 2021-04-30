@@ -21,19 +21,17 @@
     <td valign="top">
       <dl class="dl-horizontal">
         <dt>Name</dt>
-        <dd>{{ case.name }}</dd>
-        <dt>Birth Date</dt>
-        <dd>{{ case.birthDate }}</dd>
-        <dt>Type</dt>
-        <dd *ngIf="!deleteSuccess">{{ case.type.name }}</dd>
-        <button class="btn btn-default" (click)="editCase(case)">Edit Case</button>
-        <button class="btn btn-default" (click)="deleteCase(case)">Delete Case</button>
-        <button class="btn btn-default" (click)="addNote(case)">Add Note</button>
+        <dd>{{ aCase.name }}</dd>
+        <dt>Status</dt>
+        <dd *ngIf="!deleteSuccess">{{ aCase.status.name }}</dd>
+        <button class="btn btn-default" (click)="editCase(aCase)">Edit Case</button>
+        <button class="btn btn-default" (click)="deleteCase(aCase)">Delete Case</button>
+        <button class="btn btn-default" (click)="addNote(aCase)">Add Note</button>
 
       </dl>
     </td>
     <td valign="top">
-      <app-note-list [notes]="case.notes"></app-note-list>
+      <app-note-list [notes]="aCase.notes"></app-note-list>
     </td>
   </tr>
 

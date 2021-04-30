@@ -28,16 +28,8 @@
         <td><b>{{ user.firstName }} {{ user.lastName }}</b></td>
       </tr>
       <tr>
-        <th>Address</th>
-        <td>{{ user.address }}</td>
-      </tr>
-      <tr>
-        <th>City</th>
-        <td>{{ user.city }}</td>
-      </tr>
-      <tr>
-        <th>Telephone</th>
-        <td>{{ user.telephone }}</td>
+        <th>Email</th>
+        <td>{{ user.email }}</td>
       </tr>
     </table>
 
@@ -52,7 +44,7 @@
 
     <table class="table table-striped">
       <tr>
-        <app-case-list *ngFor="let case of user.cases" [case]="case"></app-case-list>
+        <app-case-list *ngFor="let aCase of user.cases" [aCase]="aCase"></app-case-list>
       </tr>
     </table>
   </div>

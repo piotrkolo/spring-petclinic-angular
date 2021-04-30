@@ -25,6 +25,6 @@ import {Case} from '../cases/case';
 export interface Note {
   id: number;
   date: string;
-  description: string;
-  case: Case;
+  details: string;
+  aCase: Case;
 }

@@ -59,7 +59,7 @@ export class NoteAddComponent implements OnInit {
     this.caseService.getCaseById(caseId).subscribe(
       response => {
         this.currentCase = response;
-        this.note.case = this.currentCase;
+        this.note.aCase = this.currentCase;
         this.currentStatus = this.currentCase.status;
         this.currentUser = this.currentCase.user;
       },

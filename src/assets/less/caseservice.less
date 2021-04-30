@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import "../../vendors/bootstrap/less/bootstrap.less";
+@import "../../../node_modules/bootstrap/less/bootstrap.less";
 
 @spring-green:      #6db33f;
 @spring-dark-green: #5fa134;
@@ -40,7 +40,7 @@
 @btn-default-bg:                 @spring-brown;
 @btn-default-border:             @spring-green;
 
-@icon-font-path: "../../vendors/bootstrap/dist/fonts/";
+@icon-font-path: "../../../node_modules/bootstrap/dist/fonts/";
 
 @nav-tabs-active-link-hover-color:        @spring-light-grey;
 @nav-tabs-active-link-hover-bg:           @spring-brown;
@@ -159,7 +159,7 @@ table td.action-column {
 }
 
 .help-block {
-  color: lighten(@text-color, 50%); // lighten the text some for contrast
+  color: lighten(@text-color, 50%);
 }
 
 .xd-containers {
@@ -222,7 +222,7 @@ table td.action-column {
   .alert-variant(fade(@alert-danger-bg, 70%); @alert-danger-border; @alert-danger-text);
 }
 
-.myspinner {
+.mySpinner {
   animation-name: spinner;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -235,12 +235,12 @@ table td.action-column {
   -webkit-animation-timing-function: linear;
 }
 
-@keyframes "spinner" {
+@keyframes spinner {
   from { transform: rotate( 0deg );   }
   to   { transform: rotate( 360deg ); }
 }
 
-@-webkit-keyframes "spinner" {
+@-webkit-keyframes spinner {
   from { -webkit-transform: rotate( 0deg ); }
   to   { -webkit-transform: rotate( 360deg ); }
 }

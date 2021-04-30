@@ -24,9 +24,7 @@
         <thead>
         <tr>
           <th>Name</th>
-          <th>Address</th>
-          <th>City</th>
-          <th>Telephone</th>
+          <th>Email</th>
           <th>Cases</th>
         </tr>
         </thead>
@@ -35,14 +33,11 @@
         <tr *ngFor="let user of users">
           <td class="userFullName"><a routerLink="/users/{{user.id}}" routerLinkActive="active"
                                        (click)="onSelect(user)">{{ user.firstName }} {{ user.lastName }}</a></td>
-          <td>{{ user.address }}</td>
-          <td>{{ user.city }}</td>
-          <td>{{ user.telephone }}</td>
+          <td>{{ user.email }}</td>
           <td>
-        <tr *ngFor="let case of user.cases">
-          {{ case.name }}
-        </tr>
-        </td>
+            <tr *ngFor="let aCase of user.cases">
+              {{ aCase.name }}</tr>
+          </td>
         </tr>
         </tbody>
       </table>

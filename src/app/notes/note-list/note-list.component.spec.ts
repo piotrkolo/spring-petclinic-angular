@@ -86,7 +86,7 @@ describe('NoteListComponent', () => {
     testNotes =  [{
       id: 1,
       date: '2016-09-07',
-      description: '',
+      details: '',
       case: testCase
     }];
 
